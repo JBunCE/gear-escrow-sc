@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 gmeta = { git = "https://github.com/gear-tech/gear.git", rev = "175f69b7" }
-gstd = { git = "https://github.com/gear-tech/gear.git", rev = "175f69b7" }
+gstd = { git = "https://github.com/gear-tech/gear.git", tag = "v1.0.2" }
 scale-info = { version = "2", default-features = false }
 parity-scale-codec = { version = "3", default-features = false }
 hashbrown = "0.14"

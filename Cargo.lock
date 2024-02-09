@@ -1287,14 +1287,6 @@ dependencies = [
 
 [[package]]
 name = "galloc"
-version = "1.0.1"
-source = "git+https://github.com/gear-tech/gear.git?rev=175f69b7#175f69b7558e3925d9305d23ae8ddabeacc860bb"
-dependencies = [
- "dlmalloc 0.1.4 (git+https://github.com/gear-tech/dlmalloc-rust.git)",
-]
-
-[[package]]
-name = "galloc"
 version = "1.0.2"
 source = "git+https://github.com/gear-tech/gear.git?tag=v1.0.2#d02d306f97c2d60c1a8786366a56d8c02264f4e1"
 dependencies = [
@@ -1339,23 +1331,11 @@ dependencies = [
 
 [[package]]
 name = "gcore"
-version = "1.0.1"
-source = "git+https://github.com/gear-tech/gear.git?rev=175f69b7#175f69b7558e3925d9305d23ae8ddabeacc860bb"
-dependencies = [
- "gear-core-errors 1.0.1",
- "gear-stack-buffer 1.0.1",
- "gsys 1.0.1",
- "parity-scale-codec",
- "static_assertions",
-]
-
-[[package]]
-name = "gcore"
 version = "1.0.2"
 source = "git+https://github.com/gear-tech/gear.git?tag=v1.0.2#d02d306f97c2d60c1a8786366a56d8c02264f4e1"
 dependencies = [
  "gear-core-errors 1.0.2",
- "gear-stack-buffer 1.0.2",
+ "gear-stack-buffer",
  "gsys 1.0.2",
  "parity-scale-codec",
  "static_assertions",
@@ -1550,7 +1530,7 @@ dependencies = [
  "gclient",
  "gear-wasm-builder 0.1.2 (git+https://github.com/gear-tech/gear.git?rev=175f69b7)",
  "gmeta 1.0.1",
- "gstd 1.0.1",
+ "gstd 1.0.2",
  "gtest",
  "hashbrown 0.14.3",
  "io",
@@ -1559,11 +1539,6 @@ dependencies = [
  "state",
  "tokio",
 ]
-
-[[package]]
-name = "gear-stack-buffer"
-version = "1.0.1"
-source = "git+https://github.com/gear-tech/gear.git?rev=175f69b7#175f69b7558e3925d9305d23ae8ddabeacc860bb"
 
 [[package]]
 name = "gear-stack-buffer"
@@ -1869,25 +1844,6 @@ dependencies = [
 
 [[package]]
 name = "gstd"
-version = "1.0.1"
-source = "git+https://github.com/gear-tech/gear.git?rev=175f69b7#175f69b7558e3925d9305d23ae8ddabeacc860bb"
-dependencies = [
- "bs58",
- "futures",
- "galloc 1.0.1",
- "gcore 1.0.1",
- "gear-core-errors 1.0.1",
- "gstd-codegen 0.1.0 (git+https://github.com/gear-tech/gear.git?rev=175f69b7)",
- "hashbrown 0.14.3",
- "hex",
- "parity-scale-codec",
- "primitive-types",
- "scale-info",
- "static_assertions",
-]
-
-[[package]]
-name = "gstd"
 version = "1.0.2"
 source = "git+https://github.com/gear-tech/gear.git?tag=v1.0.2#d02d306f97c2d60c1a8786366a56d8c02264f4e1"
 dependencies = [
@@ -1918,16 +1874,6 @@ dependencies = [
 [[package]]
 name = "gstd-codegen"
 version = "0.1.0"
-source = "git+https://github.com/gear-tech/gear.git?rev=175f69b7#175f69b7558e3925d9305d23ae8ddabeacc860bb"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.48",
-]
-
-[[package]]
-name = "gstd-codegen"
-version = "0.1.0"
 source = "git+https://github.com/gear-tech/gear.git?rev=946ac47#946ac47439c624dd002e3111dfff73d0c7aabbb9"
 dependencies = [
  "proc-macro2",
@@ -1939,11 +1885,6 @@ dependencies = [
 name = "gsys"
 version = "0.2.2"
 source = "git+https://github.com/gear-tech/gear.git?rev=946ac47#946ac47439c624dd002e3111dfff73d0c7aabbb9"
-
-[[package]]
-name = "gsys"
-version = "1.0.1"
-source = "git+https://github.com/gear-tech/gear.git?rev=175f69b7#175f69b7558e3925d9305d23ae8ddabeacc860bb"
 
 [[package]]
 name = "gsys"
@@ -2302,7 +2243,7 @@ name = "io"
 version = "0.1.0"
 dependencies = [
  "gmeta 1.0.1",
- "gstd 1.0.1",
+ "gstd 1.0.2",
  "hashbrown 0.14.3",
  "parity-scale-codec",
  "scale-info",

@@ -1,3 +1,4 @@
+#![no_std]
 use gstd::{msg, ActorId};
 use io::*;
 use parity_scale_codec::{Decode, Encode};
@@ -44,15 +45,14 @@ extern "C" fn init() {
 #[no_mangle]
 extern "C" fn handle() {
     let action: EscrowAction = msg::load().expect("Can't load action"); 
-    let scrow = scrow_mut();
     let contract = scrow_contract_mut();
 
     match action {
         EscrowAction::Deposit => {
-            scrow.state = EscrowState::AwaitingDelivery;
+            contract.deposit();
         }
         EscrowAction::ConfirmDelivery => {
-            scrow.state = EscrowState::Completed;
+            contract.confirm_delivery()
         }
     }
 }

@@ -1,6 +1,5 @@
 use gstd::msg;
 use io::{EscrowEvent, EscrowState};
-use scale_info::build::state;
 
 use crate::scrow_mut;
 

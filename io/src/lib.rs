@@ -1,7 +1,6 @@
+#![no_std]
+use gstd::{ prelude::*, ActorId };
 use gmeta::{ In, InOut, Metadata, Out };
-use gstd::{prelude::*, ActorId};
-use parity_scale_codec::{Decode, Encode};
-use scale_info::TypeInfo;
 
 #[derive(Encode, Decode, TypeInfo)]
 pub enum EscrowAction {

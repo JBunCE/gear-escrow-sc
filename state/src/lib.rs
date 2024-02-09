@@ -1,7 +1,7 @@
 #![no_std]
-use gmeta::metawasm;
-use gstd::{prelude::*, ActorId};
 use io::*;
+use gstd::{prelude::*, ActorId};
+use gmeta::metawasm;
 
 #[metawasm]
 pub mod metafns {
